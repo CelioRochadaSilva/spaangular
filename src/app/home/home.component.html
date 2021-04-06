@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA com Angular</title>
+</head>
+
+<body>
+
+  <p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+
+    </mat-toolbar>
+  </p>
+  <h1>Dados gerais: alunos</h1>
+  <mat-radio-group aria-label="Select an option">
+    <p>Selecione horário da aula</p>
+    <mat-radio-button value="1">Matutino</mat-radio-button>
+    <mat-radio-button value="2">Vespertino</mat-radio-button>
+    <mat-radio-button value="3">Noturno</mat-radio-button>
+  </mat-radio-group>
+  
+  <div>
+    
+<hr>
+    <spa-alunos [valorInicial]="valor"></spa-alunos>
+
+    <button (click)="mudarValor()">Mudar Valor</button>
+    <button (click)="reiniciarValor()">Reiniciar Valor</button>
+    <button (click)="exibirTabela()">Exibir Tabela aluno </button>
+  
+
+  </div>
+
+  <table *ngIf="exibeTabela">
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>E-mail</th>
+      <th>Curso</th>
+    </tr>
+
+
+    <tr *ngFor="let aluno of listaAlunos">
+      <td>{{aluno.nome}}</td>
+      <td>{{aluno.idade}}</td>
+      <td>{{aluno.email}}</td>
+      <td>{{aluno.curso}}</td>
+    </tr>
+  </table>
+
+  <spa-professores></spa-professores>
+
+  
+</body>
+
+</html>
