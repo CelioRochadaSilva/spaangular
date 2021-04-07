@@ -1,4 +1,15 @@
-# Spaangular
+# Tela principal
+![tela principal](https://github.com/CelioRochadaSilva/spaangular/blob/main/src/img/tela%20principal.png)
+
+# Tela principal
+![telaseleciona turno](https://github.com/CelioRochadaSilva/spaangular/blob/main/src/img/tela%20selecionar%20turno.png)
+
+# Tela principal
+![tela tabela](https://github.com/CelioRochadaSilva/spaangular/blob/main/src/img/tela%20exbir%20tabela.png)
+
+
+# Spaangular: Elaborado atraves Digital Innovation One 2021
+## Desenvolvendo SPA com Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
